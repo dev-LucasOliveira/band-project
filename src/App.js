@@ -1,9 +1,17 @@
 import './App.css';
+import AlternativeLogo from './AlternativeLogo';
+import {useState} from 'react';
+
 
 function App() {
+  const [test, setTest] = useState ('true');
+  function ChangeLogo() {
+    setTest(!test);
+  }
   return (
     <div className="App">
-      <div className='logo'>LOGO</div>
+      {test ? <div className='logo'>LOGO</div> : <div className='logo-alternative'>LOGO</div>}
+      <AlternativeLogo onChange={ChangeLogo}/>
       <div className='input-box'>
         <div className='title-input-box'>
           <p className='title-input'>
@@ -18,7 +26,12 @@ function App() {
           <input type='text' id='password-input' className='input' required/>
           <label htmlFor='password-input' className='label'>Senha:</label>
         </div>
+        <div>
+          
+        </div>
       </div>
+      
+      {console.log(test)}
     </div>
   );
 }
