@@ -1,17 +1,12 @@
 import './App.css';
-import AlternativeLogo from './AlternativeLogo';
-import {useState} from 'react';
+
 
 
 function App() {
-  const [test, setTest] = useState ('true');
-  function ChangeLogo() {
-    setTest(!test);
-  }
+  
   return (
     <div className="App">
-      {test ? <div className='logo'>LOGO</div> : <div className='logo-alternative'>LOGO</div>}
-      <AlternativeLogo onChange={ChangeLogo}/>
+      <div className='logo'>LOGO</div>
       <div className='input-box'>
         <div className='title-input-box'>
           <p className='title-input'>
