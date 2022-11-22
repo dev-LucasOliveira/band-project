@@ -24,11 +24,8 @@
   font-size: 25px;
 }
 
-.logo-alternative {
-  position: absolute;
-  top: 25vh;
-  color: blue;
-  font-size: 25px;
+.Navigation-menu {
+  background-color: var(--color1);
 }
 
 .input-box {

@@ -1,26 +1,10 @@
-import Dashboard from './Dashboard';
-import JoinPage from './JoinPage';
-import SignUp from './SignUp';
-import {BrowserRouter, Routes, Link, Route} from 'react-router-dom';
+import { Card, CardContent, Grid, TextField, Button } from "@mui/material";
 
-
-function SignIn() {
+function SignIn(props) {
     
     return (
         <div className="App">
             <div className='logo'>LOGO</div>
-            <BrowserRouter>
-                <ul>
-                    <li><Link to="/Dashboard">Dashboard</Link></li>
-                    <li><Link to="/JoinPage">JoinPage</Link></li>
-                    <li><Link to="/SignUp">SignUp</Link></li>
-                </ul>
-                <Routes>
-                    <Route path= "/Dashboard" element={<Dashboard/>}></Route>
-                    <Route path= "/JoinPage" element={<JoinPage/>}></Route>
-                    <Route path= "/SignUp" element={<SignUp/>}></Route>
-                </Routes>
-            </BrowserRouter>
             <div className='input-box'>
                 <div className='title-input-box'>
                     <p className='title-input'>
