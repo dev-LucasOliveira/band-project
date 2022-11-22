@@ -1,7 +1,9 @@
+import React from 'react';
 import './App.css';
 import Dashboard from './Components/Dashboard';
 import JoinPage from './Components/JoinPage';
 import SignIn from './Components/SignIn';
+import { useAuth } from './providers/auth';
 import SignUp from './Components/SignUp';
 import {BrowserRouter, Routes, Link, Route} from 'react-router-dom';
 import { Button, Grid } from '@mui/material';
@@ -9,6 +11,7 @@ import { Button, Grid } from '@mui/material';
 
 function App() {
   
+  const {} = useAuth();
 
   return (
     <div>
