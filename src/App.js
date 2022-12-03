@@ -20,18 +20,17 @@ function App() {
           <ul>
             <li><Link to="/Dashboard">Dashboard</Link></li>
             <li><Link to="/JoinPage">JoinPage</Link></li>
-            <li><Link to="/SignIn">SignIn</Link></li>
             <li><Link to="/SignUp">SignUp</Link></li>
           </ul>
           <Routes>
             <Route path= "/Dashboard" element={<Dashboard/>}></Route>
             <Route path= "/JoinPage" element={<JoinPage/>}></Route>
-            <Route path= "/SignIn" element={<SignIn/>}></Route>
+            <Route path= "/" index element={<SignIn/>}></Route>
             <Route path= "/SignUp" element={<SignUp/>}></Route>
           </Routes>
         </BrowserRouter>
       </div>
-      <SignIn/>
+      {/* <SignIn/> */}
     </div>
     
   );
