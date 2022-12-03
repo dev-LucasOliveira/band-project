@@ -1,0 +1,8 @@
+PALETA DE CORES
+
+color 00: rgb(8, 8, 8)
+color 01: rgb(155, 158, 165)
+color 02: rgb(42, 45, 52)
+color 03: rgb(54, 54, 62)
+color 04: rgb(0, 223, 130)
+color 05: rgb(76, 252, 177)
